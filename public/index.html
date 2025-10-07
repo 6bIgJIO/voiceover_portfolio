@@ -1,15 +1,44 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BestVoice — Demo Reel</title>
-  <meta name="description" content="Professional voice-over demo reel (RU/EN)" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>BestVoice — Demo Reel</title>
+<script src="https://cdn.tailwindcss.com"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<style>body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}.wave{background:linear-gradient(90deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));}.audio-card audio{width:100%;}</style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen">
-  <div id="root"></div>
-  <script src="static/js/bundle.js"></script>
-</body>
-</html>
+<body class="bg-gradient-to-b from-black via-slate-900 to-slate-800 text-white">
+<header class="max-w-5xl mx-auto p-6 flex items-center justify-between">
+  <div class="flex items-center gap-4">
+    <div class="w-14 h-14 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-black font-bold">BV</div>
+    <div><h1 class="text-2xl font-extrabold">BestVoice</h1><p class="text-sm text-slate-400">RU / EN — Commercials · Narration · Characters</p></div>
+  </div>
+  <nav class="space-x-4 text-sm text-slate-300 hidden md:block"><a href="#demos" class="hover:text-white">Demos</a><a href="#services" class="hover:text-white">Services</a><a href="#contact" class="hover:text-white">Contact</a></nav>
+</header>
+<main class="max-w-5xl mx-auto p-6">
+  <section class="grid lg:grid-cols-2 gap-8 items-center mb-10">
+    <div>
+      <h2 class="text-4xl font-extrabold leading-tight">Warm, cinematic voice — ready for your project</h2>
+      <p class="mt-4 text-slate-300">Professional voice-over in Russian and English. Broadcast-ready files, fast turnaround. Paid test reads available.</p>
+      <div class="mt-6 flex gap-3"><a href="https://t.me/BestVoiceOver" target="_blank" class="px-4 py-2 bg-amber-400 text-black rounded-lg font-semibold">Telegram</a><a href="https://www.youtube.com/watch?v=v_7oNpknQ6g" target="_blank" class="px-4 py-2 border border-white/10 rounded-lg">YouTube reel</a></div>
+    </div>
+    <div class="relative">
+      <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black/60 border border-white/5 flex items-center justify-center">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675'><rect width='100%' height='100%' fill='%230b1220'/><text x='50%' y='50%' fill='%2399a3b2' font-size='28' font-family='Arial' text-anchor='middle' alignment-baseline='middle'>Demo Player — replace with embedded video/audio</text></svg>" alt="demo" />
+      </div>
+      <div class="absolute -bottom-6 left-6 bg-gradient-to-r from-amber-400 to-orange-500 px-3 py-1 rounded-full shadow-lg text-black font-semibold">Featured Demo</div>
+    </div>
+  </section>
+
+  <section id="demos" class="mb-14">
+    <h3 class="text-xl font-bold mb-4">Selected Demos</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="audio-card p-6 wave rounded-2xl"><h4 class="font-semibold mb-2">Promotional Intro — 30s</h4><p class="text-sm text-slate-300 mb-3">Clean, warm commercial read. Delivered WAV/MP3.</p><audio controls preload="none"><source src="samples/promo_30s.mp3" type="audio/mpeg"></audio></div>
+      <div class="audio-card p-6 wave rounded-2xl"><h4 class="font-semibold mb-2">Character Read — sample</h4><p class="text-sm text-slate-300 mb-3">Character performance with dynamic range.</p><audio controls preload="none"><source src="samples/character_sample.mp3" type="audio/mpeg"></audio></div>
+    </div>
+  </section>
+
+  <section id="services" class="mb-12"><h3 class="text-xl font-bold mb-4">Services & Pricing</h3><div class="grid sm:grid-cols-3 gap-4"><div class="p-4 rounded-xl bg-white/3 border border-white/5"><div class="font-semibold">Short spot (30–60s)</div><div class="text-slate-300">From 1200 ₽ / $20 — 50% upfront.</div></div><div class="p-4 rounded-xl bg-white/3 border border-white/5"><div class="font-semibold">Characters & Games</div><div class="text-slate-300">Bundle pricing for multiple lines.</div></div><div class="p-4 rounded-xl bg-white/3 border border-white/5"><div class="font-semibold">Narration / Audiobooks</div><div class="text-slate-300">Rate on request.</div></div></div></section>
+
+  <section id="contact" class="p-6 rounded-2xl bg-gradient-to-r from-black/60 to-slate-900/40 border border-white/5"><h3 class="text-xl font-bold mb-2">Contact</h3><p class="text-slate-300">Telegram: <a class="text-amber-300" href="https://t.me/BestVoiceOver">https://t.me/BestVoiceOver</a></p><p class="text-slate-300">Email: <a class="text-amber-300" href="mailto:heyhochannel92@gmail.com">heyhochannel92@gmail.com</a></p><p class="text-sm text-slate-400 mt-3">I accept USDT (TRC20), WebMoney, Alfa-bank transfers.</p></section>
+</main>
+<footer class="py-8 text-center text-sm text-slate-400">© BestVoice — demo portfolio</footer>
+<script>document.addEventListener('DOMContentLoaded',()=>{anime.timeline({easing:'easeOutExpo',duration:600}).add({targets:'header',translateY:[-20,0],opacity:[0,1],delay:100}).add({targets:'main section:nth-child(1)',translateY:[20,0],opacity:[0,1]},'-=300').add({targets:'.audio-card',translateY:[10,0],opacity:[0,1],delay:anime.stagger(80)},'-=300')});</script>
+</body></html>
